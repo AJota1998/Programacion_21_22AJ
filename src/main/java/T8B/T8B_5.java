@@ -4,9 +4,12 @@ import java.util.Scanner;
 
 public class T8B_5 {
     public static void main(String[] args) {
+
         Scanner teclado = new Scanner(System.in);
+
         System.out.println("Introduzca la altura");
         int altura = teclado.nextInt();
+
         System.out.println("Introduzca el carácter");
         String character = teclado.next();
 
