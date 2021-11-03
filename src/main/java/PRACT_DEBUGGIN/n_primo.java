@@ -2,7 +2,7 @@ package PRACT_DEBUGGIN;
 
 import java.util.Scanner;
 
-public class nº_primo {
+public class n_primo {
     public static void main(String[] args) {
         int num;
         Scanner sc = new Scanner(System.in);
