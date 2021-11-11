@@ -9,5 +9,18 @@ public class funcion7 {
 
         System.out.println("Introduce un número");
         int numero = teclado.nextInt();
+
+        System.out.println("El número " + numero + " es primo " + es_primo(numero));
+
+    }
+    static boolean es_primo (int numero) {
+        boolean primo = true;
+        for (int i = 2; i < numero; i++) {
+            if (numero % i == 0) {
+                primo = false;
+                break;
+            }
+        }
+        return primo;
     }
 }
