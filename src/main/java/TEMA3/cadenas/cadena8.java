@@ -14,8 +14,11 @@ public class cadena8 {
         String mensajelimpio = " ";
         String inicio = " Javalín, javalón ";
         String fin = "Javalén, len, len";
+
         int longi_fin = fin.length();
+
         String comparado = mensaje.substring(0,18);
+
         String compfin = mensaje.substring(19, mensaje.length());
 
         if (comparado.equals(inicio)) {
