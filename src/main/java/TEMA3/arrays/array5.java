@@ -5,62 +5,41 @@ import java.util.Scanner;
 
 public class array5 {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-
-//        System.out.println("Introduce la longitud deseada");
-//        int longitud = teclado.nextInt();
-
-//        System.out.println("---Vamos a ordenar dos arrays de " + longitud + " dígitos---");
-
-        int []serie1= {10, 12345, -15, 0, 7};
-
-
-
-//        for (int i = 0; i < longitud; i++) {
-//            System.out.println("Introduce un número");
-//            serie1[i]= teclado.nextInt();
-//        }
+        int[] serie1 = {89, 9, 2, 3, 13, 8};
         Arrays.sort(serie1);
 
-        int []serie2 = {4, 0, 3, 6, 7};
-
-//        for (int i = 0; i < longitud; i++) {
-//            System.out.println("Introduce un número");
-//            serie2[i] = teclado.nextInt();
-//        }
+        System.out.println(Arrays.toString(serie1));
+        int[] serie2 = {1, 3, 5, 1, 98, 23};
         Arrays.sort(serie2);
 
-        int []ordenado = new int[5 * 2];
-        int contserie1 = 0;
+        System.out.print(Arrays.toString(serie2));
+
+        int[] ordenado = new int[serie1.length + serie2.length];
+        int contordenado = 0;
+        int ccontserie1 = 0;
         int contserie2 = 0;
-        int contorden = 0;
 
-        while (contorden != ordenado.length) {
-//            System.out.println(contorden);
-            System.out.println("contador serie1 - " + contserie1);
-            System.out.println("contador serie2 - " + contserie2);
-            System.out.println("array resultado - " + Arrays.toString(ordenado));
-            if (contserie1 < serie1.length && contserie2 < serie2.length && serie1[contserie1] < serie2[contserie2]) {
-                ordenado[contorden] = serie1[contserie1];
-                contserie1++;
-                contorden++;
-            } else if (contserie1 < serie1.length && contserie2 < serie2.length && serie1[contserie1] >= serie2[contserie2]) {
-                ordenado[contorden] = serie2[contserie2];
-                contserie2++;
-                contorden++;
-            }
-            if (contserie1 == serie1.length-1) {
-                ordenado[contorden] = serie2[contserie2];
-                contserie2++;
-                contorden++;
-            } else if (contserie2 == serie2.length-1) {
-                ordenado[contorden] = serie1[contserie1];
-                contserie1++;
-                contorden++;
-            }
+        while (contordenado != ordenado.length) {
 
-        } for (double ejemplo: ordenado) {
-            System.out.print(ejemplo);
+            if (ccontserie1 == serie1.length) {
+                ordenado[contordenado] = serie2[contserie2];
+                contserie2++;
+                contordenado++;
+            } else if (contserie2 == serie2.length) {
+                ordenado[contordenado] = serie1[ccontserie1];
+                ccontserie1++;
+                contordenado++;
+            } else if (serie1[ccontserie1] <= serie2[contserie2]) {
+                ordenado[contordenado] = serie1[ccontserie1];
+                ccontserie1++;
+                contordenado++;
+            } else {
+                ordenado[contordenado] = serie2[contserie2];
+                contserie2++;
+                contordenado++;
+            }
+        }
+        System.out.println();
+        System.out.println(Arrays.toString(ordenado));
         }
     }
-}
