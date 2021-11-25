@@ -17,7 +17,7 @@ public class funcion2 {
 
     }
     static void rango (int numero1, int numero2) {
-        for (int i = numero1; i < numero2; i++) {
+        for (int i = numero1; i < numero2 -1; i++) {
             numero1++;
             System.out.println(numero1);
         }

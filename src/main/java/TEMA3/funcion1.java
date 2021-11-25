@@ -15,7 +15,7 @@ public class funcion1 {
     }
     static void eco (int numero) {
         for (int i = 0; i <= numero; i++) {
-            System.out.println("Eco... ");
+            System.out.println("Eco... " + i);
         }
     }
 }

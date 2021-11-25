@@ -11,6 +11,5 @@ public class cadena3 {
 
         int longitud = frase.length();
         System.out.println(frase.charAt(longitud / 2));
-
     }
 }

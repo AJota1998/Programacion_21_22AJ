@@ -17,6 +17,7 @@ public class funcion4 {
 
     }
     static int mayor (int n1, int n2) {
+
         return n1 > n2 ? n1 : n2; // Con "? x : y;" esto devuelve uno, sino el otro
     }
 }

@@ -12,7 +12,7 @@ public class cadena2 {
         String parrafo = palabra;
 
         while (!palabra.equalsIgnoreCase("fin")) {
-            System.out.println("Introducd otra palabra, para terminar introduzca fin");
+            System.out.println("Introduce otra palabra, para terminar introduzca fin");
             palabra = teclado.next();
             if (palabra.equalsIgnoreCase("fin")) {
                 parrafo = parrafo;
