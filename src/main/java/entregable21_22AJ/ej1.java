@@ -16,7 +16,8 @@ public class ej1 {
         } while (!a.equals(b));
 
     }
-    public static String palabraAhorcado(String a, String b, char c) {
 
-    }
+    //public static String palabraAhorcado(String a, String b, char c) {
+
+    //}
 }
