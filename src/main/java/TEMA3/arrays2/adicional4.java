@@ -52,7 +52,6 @@ public class adicional4 {
             temp_x = temp_x + inc_x;
             temp_y = temp_y + inc_y;
         }
-
         return movimientos;
     }
 }
