@@ -28,7 +28,7 @@ public class adicional5 {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 if (i==j) {
-                    diagonal[i]= array[i][j];
+                    diagonal[i] = array[i][j];
                     System.out.println(array[i][j]);
                 }
             }

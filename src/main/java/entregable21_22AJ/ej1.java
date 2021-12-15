@@ -4,20 +4,29 @@ import java.util.Scanner;
 
 public class ej1 {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        String a = "Adobo";
-        System.out.println("Introduzca una palabra");
-        String b = teclado.next();
+        String palabra = "programacion";
+        String resultado = "------------";
+        char caracter = 'o';
+        Scanner sc = new Scanner(System.in);
 
-        do {
-            System.out.println("Introduzca un carácter");
-            char c = teclado.next().charAt(0);
-            System.out.println("Palabra ahorcado " + a + ", " + b + ", " + c);
-        } while (!a.equals(b));
+        System.out.println(resultado);
 
+        while (resultado.contains("-")) {
+            System.out.print("¿Qué carácter quieres buscar?: ");
+            caracter = sc.next().charAt(0);
+            resultado = palabraAhorcado(palabra, resultado, caracter);
+            System.out.println(resultado);
+        }
+        System.out.println("¡Has ganado!");
     }
 
-    //public static String palabraAhorcado(String a, String b, char c) {
-
-    //}
+    public static String palabraAhorcado(String a, String b, char c) {
+        StringBuilder sb = new StringBuilder(b);
+        for (int i = 0; i < a.length(); i++) {
+            if (a.charAt(i) == c) {
+                sb.setCharAt(i, c);
+            }
+        }
+        return sb.toString();
+    }
 }
