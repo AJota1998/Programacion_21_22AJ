@@ -1,18 +1,19 @@
-package T8.T7.T6;
+package UNIDAD1.TAREA6;
 
 import java.util.Scanner;
 
-public class T6_1 {
+public class ej1_numeromes {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Introduzca un numero y mostraré el mes");
-        int mes = teclado.nextInt();
 
-        switch (mes) {
+        System.out.println("Introduzca el número del mes");
+        int numero = teclado.nextInt();
+
+        switch (numero) {
             case 1:
                 System.out.println("Enero");
-                break;
+            break;
             case 2:
                 System.out.println("Febrero");
                 break;

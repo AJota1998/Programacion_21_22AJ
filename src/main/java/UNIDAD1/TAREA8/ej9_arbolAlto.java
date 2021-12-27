@@ -1,12 +1,11 @@
-package T8;
+package UNIDAD1.TAREA8;
 
 import java.util.Scanner;
 
-public class T8_9 {
+public class ej9_arbolAlto {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-
         int alturaarbol = 0;
         int etiquetaarbol = 0;
         int arbolalto = 0;
@@ -24,6 +23,5 @@ public class T8_9 {
         }
         System.out.println("El arbol más alto mide " + arbolalto  + " cm y su etiqueta es la " + etiarbolalto );
 
-        }
-
+    }
 }
