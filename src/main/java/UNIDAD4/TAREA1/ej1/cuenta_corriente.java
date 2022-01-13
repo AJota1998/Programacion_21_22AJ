@@ -1,4 +1,4 @@
-package UNIDAD4.ej2;
+package UNIDAD4.TAREA1.ej1;
 
 public class cuenta_corriente {
 
@@ -12,17 +12,6 @@ public class cuenta_corriente {
         this.DNI = dni;
         this.saldo = 0;
         this.limite = -50;
-    }
-
-    public cuenta_corriente(int saldobanco) {
-    this.saldo = saldobanco;
-    this.limite = 0;
-    }
-
-    public cuenta_corriente(int saldobanco, int limite, String DNI) {
-        this.saldo = saldobanco;
-        this.limite = limite;
-        this.DNI = DNI;
     }
 
     public boolean sacar_dinero(int cantidad) {
