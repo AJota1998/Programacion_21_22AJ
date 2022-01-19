@@ -1,11 +1,12 @@
-package UNIDAD4.TAREA1.ej2;
+package UNIDAD4.ej3;
 
-public class cuenta_corriente {
+// si no ponemos public class, esta clase solo será visible entre las vecinas (misma carpeta)
+class cuenta_corriente {
 
     private long saldo;
-    private long limite;
-    private String nombre;
-    private String DNI;
+    private long limite; //visible solo para este fichero
+    public String nombre; //visible para cualquier clase
+    String DNI; //solo es visible para clases vecinas
 
     public cuenta_corriente(String nom_cli, String dni) {
         this.nombre = nom_cli;

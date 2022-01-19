@@ -1,4 +1,4 @@
-package UNIDAD4.TAREA1.ej3;
+package UNIDAD4.ej3;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package UNIDAD4.TAREA1.ej3;
+package UNIDAD4.ej6;
 
 // si no ponemos public class, esta clase solo será visible entre las vecinas (misma carpeta)
 class cuenta_corriente {

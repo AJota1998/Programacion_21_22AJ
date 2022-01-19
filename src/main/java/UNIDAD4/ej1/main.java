@@ -1,4 +1,4 @@
-package UNIDAD4.TAREA1.ej4;
+package UNIDAD4.ej1;
 
 import java.util.Scanner;
 
@@ -8,21 +8,12 @@ public class main {
 
         //creamos la cuenta corriente
 
-        System.out.println("Introduzca el nombre del banco");
-        String banco = teclado.nextLine();
         System.out.println("Introduzca el nombre completo");
         String nom_cli = teclado.nextLine();
         System.out.println("Introduzca el DNI");
         String DNI = teclado.next();
-        cuenta_corriente c1 = new cuenta_corriente(nom_cli, DNI, banco);
 
-        //Sobrecargar el constructor
-        int saldobanco = 40;
-        cuenta_corriente c2 = new cuenta_corriente(saldobanco);
-
-        //volvemos a sobrecargar el constructor
-        int limite = 0;
-        cuenta_corriente c3 = new cuenta_corriente(saldobanco, limite, DNI);
+        cuenta_corriente c1 = new cuenta_corriente(nom_cli, DNI);
 
         //sacar dinero
 

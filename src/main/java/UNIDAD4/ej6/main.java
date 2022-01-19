@@ -1,4 +1,4 @@
-package UNIDAD4.TAREA1.ej1;
+package UNIDAD4.ej6;
 
 import java.util.Scanner;
 
@@ -14,6 +14,14 @@ public class main {
         String DNI = teclado.next();
 
         cuenta_corriente c1 = new cuenta_corriente(nom_cli, DNI);
+
+        //Sobrecargar el constructor
+        int saldobanco = 40;
+        cuenta_corriente c2 = new cuenta_corriente(saldobanco);
+
+        //volvemos a sobrecargar el constructor
+        int limite = 0;
+        cuenta_corriente c3 = new cuenta_corriente(saldobanco, limite, DNI);
 
         //sacar dinero
 
@@ -32,7 +40,5 @@ public class main {
         //mostrar informacion de la cuenta
 
         c1.informacion();
-
-
     }
 }
