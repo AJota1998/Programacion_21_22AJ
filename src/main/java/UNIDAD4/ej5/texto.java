@@ -4,7 +4,7 @@ public class texto {
 
     private int longit_max;
     private StringBuilder cad = new StringBuilder("");
-    static final String vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ";
+    static final String vocales = "aeiouAEIOU";
 
     // constructor
     public texto(int longitud) {
