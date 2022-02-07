@@ -1,4 +1,4 @@
-package YOUTUBE.encapsulado;
+package YOUTUBE.Encapsulado;
 
 public class clase2 {
     public static void main(String[] args) {
