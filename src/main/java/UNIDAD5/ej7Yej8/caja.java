@@ -2,17 +2,17 @@ package UNIDAD5.ej7Yej8;
 
 public class caja {
 
-    private double ancho;
-    private double alto;
-    private double fondo;
-    private etiqueta etiq;
+    protected double ancho;
+    protected double alto;
+    protected double fondo;
+    protected etiqueta etiq;
 
     enum UnidadesU {
         cm,
         m
     }
 
-    private UnidadesU U;
+    protected UnidadesU U;
 
     public caja(double ancho, double alto, double fondo, UnidadesU u, etiqueta etiq) {
         this.ancho = ancho;
