@@ -22,7 +22,6 @@ public abstract class Electrodomestico {
     }
     protected enumcons consumo;
     Double peso;
-    Double precio_final;
 
     //Métodos
 
@@ -31,21 +30,20 @@ public abstract class Electrodomestico {
         this.color = color;
         this.consumo = consumo;
         this.peso = peso;
-        this.precio_final = getPrecio_final();
+
     }
     public Electrodomestico() {
         this.preciobase = 100.0;
         this.color = enumcol.blanco;
         this.consumo = enumcons.F;
         this.peso = 5.0;
-        this.precio_final = this.getPrecio_final();
     }
     public Electrodomestico(Double preciobase, Double peso) {
         this.preciobase = preciobase;
         this.peso = peso;
         this.color = enumcol.blanco;
         this.consumo = enumcons.F;
-        this.precio_final = getPrecio_final();
+
     }
 
     public Double getPreciobase() {
@@ -64,11 +62,8 @@ public abstract class Electrodomestico {
         return peso;
     }
 
-    public void setPrecio_final(Double precio_final) {
-        this.precio_final = precio_final;
-    }
-
     public Double getPrecio_final() {
+        Double precio_final;
         if(consumo.equals(enumcons.A)) {
             precio_final = preciobase + 100.0;
         } else if(consumo.equals(enumcons.B)) {
@@ -101,7 +96,7 @@ public abstract class Electrodomestico {
                 ", color=" + color +
                 ", consumo=" + consumo +
                 ", peso=" + peso +
-                ", precio_final=" + precio_final +
+                ", precio_final=" + getPrecio_final() +
                 '}';
     }
 }
