@@ -1,6 +1,6 @@
 package UNIDAD5.ej9;
 
-public class Lavadora extends Electrodomestico {
+public class Lavadora extends Electrodomestico implements Comparable{
 
     protected Integer carga;
 
@@ -44,4 +44,16 @@ public class Lavadora extends Electrodomestico {
                 ", carga=" + carga +
                 '}';
     }
+
+    //ordenar según la carga de las lavadoras 'COMPARABLE'
+    //si quiero establecer otro criterio de ordenacion, tengo que crear otra clase e implementar el 'COMPARATOR'
+    @Override
+    public int compareTo(Object o) {
+       if(!(o instanceof Lavadora)) {
+           return 0;
+       }
+       Lavadora that = (Lavadora) o;
+       return that.carga - this.carga;
+    }
+
 }
