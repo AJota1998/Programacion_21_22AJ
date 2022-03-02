@@ -76,7 +76,7 @@ public class main {
     public static void mostrarResultados() {
         for (Poligono poli : poligonos) {
             System.out.println(poli.toString());
-            System.out.println("Área: " + poli.area());
+            System.out.println("Area: " + poli.area());
             System.out.println();
         }
     }

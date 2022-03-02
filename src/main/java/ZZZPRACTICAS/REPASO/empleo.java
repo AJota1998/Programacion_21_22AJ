@@ -50,7 +50,7 @@ public class empleo extends persona {
     }
 
     public int vocales() {
-        String vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ";
+        String vocales = "aeiouAEIOU";
 
         int contador = 0;
 

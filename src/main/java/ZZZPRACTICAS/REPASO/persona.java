@@ -94,11 +94,6 @@ public class persona extends personas{
 
     ////////////////////// MÉTODOS --------------------------------------
 
-    public static void informaciónPersona() {
-        System.out.println("\n- Aquí toda la información de personas -");
-        System.out.println("Número de personas registradas: " + contadorPersonas);
-    }
-
     ////////////////////// GETTERS AND SETTERS --------------------------------------
 
     public String getNombre() {

@@ -3,7 +3,7 @@ package ZZZPRACTICAS.REPASO;
 public class main {
     public static void main(String[] args) {
 
-        persona.informaciónPersona();
+
 
         personas[] Parray = new personas[5];
 
@@ -19,7 +19,6 @@ public class main {
         Parray[3] = e3;
         Parray[4] = e4;
 
-        persona.informaciónPersona();
 
         imprimir(Parray);
 
