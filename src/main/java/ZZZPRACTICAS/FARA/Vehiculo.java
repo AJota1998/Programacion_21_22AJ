@@ -1,12 +1,12 @@
 package ZZZPRACTICAS.FARA;
 
-public abstract class vehiculo {
+public abstract class Vehiculo {
 
     protected String matricula;
     protected int cargamaxima;
-    conductor conductor = new conductor("", "", "");
+    Conductor conductor;
 
-    public vehiculo(String matricula, int cargamaxima, conductor conductor) {
+    public Vehiculo(String matricula, int cargamaxima, Conductor conductor) {
         this.matricula = matricula;
         this.cargamaxima = cargamaxima;
         this.conductor = conductor;

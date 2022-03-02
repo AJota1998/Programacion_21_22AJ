@@ -1,15 +1,24 @@
 package ZZZPRACTICAS.FARA;
 
-public class conductor {
+public class Conductor {
 
     private String nombre;
     private String apellido;
     private String nss;
 
-    public conductor(String nombre, String apellido, String nss) {
+    public Conductor(String nombre, String apellido, String nss) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.nss = nss;
+    }
+
+    @Override
+    public String toString() {
+        return "Conductor{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", nss='" + nss + '\'' +
+                '}';
     }
 
     public String getNombre() {

@@ -1,6 +1,6 @@
 package ZZZPRACTICAS.FARA;
 
-public interface ropa {
+public interface Ropa {
 
     public void devolver();
     public void doblar();

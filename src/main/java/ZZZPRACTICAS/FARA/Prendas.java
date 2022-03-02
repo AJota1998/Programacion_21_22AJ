@@ -1,13 +1,12 @@
 package ZZZPRACTICAS.FARA;
 
-public class prendas {
+public class Prendas {
 
     private Double precio;
     private String nombre;
     private Integer codigoBarras;
     private Integer peso;
-    private boolean prendaColgada;
-    private Integer alturaBarra;
+    protected static Integer indice = 0;
 
 
 
@@ -43,19 +42,29 @@ public class prendas {
         this.peso = peso;
     }
 
-    public boolean isPrendaColgada() {
-        return prendaColgada;
+    public static Integer getIndice() {
+        return indice;
     }
 
-    public void setPrendaColgada(boolean prendaColgada) {
-        this.prendaColgada = prendaColgada;
+    public static void setIndice(Integer indice) {
+        Prendas.indice = indice;
     }
 
-    public Integer getAlturaBarra() {
-        return alturaBarra;
+    public Prendas(Double precio, String nombre, Integer codigoBarras, Integer peso) {
+        this.precio = precio;
+        this.nombre = nombre;
+        this.codigoBarras = codigoBarras;
+        this.peso = peso;
+        setIndice(getIndice() + 1);
     }
 
-    public void setAlturaBarra(Integer alturaBarra) {
-        this.alturaBarra = alturaBarra;
+    @Override
+    public String toString() {
+        return "Prendas{" +
+                "precio=" + precio +
+                ", nombre='" + nombre + '\'' +
+                ", codigoBarras=" + codigoBarras +
+                ", peso=" + peso +
+                '}';
     }
 }
