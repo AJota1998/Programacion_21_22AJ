@@ -63,6 +63,8 @@ public class main {
         System.out.println();
         coac1.compararPuntos();
         System.out.println(coac1);
+        System.out.println();
+        System.out.println(Agrupacion.getNumero_agrupaciones());
 
 
 
