@@ -2,7 +2,7 @@ package ZZZPRACTICAS.FARA;
 
 import java.util.Arrays;
 
-public class Cajas implements Comparable {
+public class Cajas {
 
     private static Integer num_cajas = 0;
     private int id;
@@ -67,13 +67,4 @@ public class Cajas implements Comparable {
         }
         return imprimir;
     }
-
-   //* @Override
-    public int compareTo(Object o) {
-        if(!(o instanceof Cajas))
-            return 0;
-        Cajas that  = (Cajas) o;
-        return (getId() > that ) *//
-    }
-
 }
