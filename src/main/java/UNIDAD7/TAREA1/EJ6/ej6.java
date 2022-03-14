@@ -1,4 +1,4 @@
-package UNIDAD7.EJ6;
+package UNIDAD7.TAREA1.EJ6;
 
 import java.util.LinkedHashSet;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package UNIDAD7.EJ5;
+package UNIDAD7.TAREA1.EJ5;
 //Crear una colección de 20 números enteros aleatorios distintos menores que 100,
 //guardarlos por orden decreciente a medida que se vayan generando, y mostrar la colección por pantalla.
 import java.util.*;

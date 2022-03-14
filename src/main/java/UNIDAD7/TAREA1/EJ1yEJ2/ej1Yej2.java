@@ -1,4 +1,4 @@
-package UNIDAD7.EJ1yEJ2;
+package UNIDAD7.TAREA1.EJ1yEJ2;
 
 import java.util.ArrayList;
 import java.util.Collections;

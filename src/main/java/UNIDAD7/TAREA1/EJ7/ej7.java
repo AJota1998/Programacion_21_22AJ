@@ -1,12 +1,9 @@
-package UNIDAD7.EJ7;
+package UNIDAD7.TAREA1.EJ7;
 //Introducir por teclado, hasta que se introduzca "fin",
 //una serie de nombres que se insertarán por orden alfabético en una colección que no permita repeticiones.
 //mostrar luego la lista de nombres por pantalla.
-import com.sun.source.tree.Tree;
 
-import java.util.LinkedHashSet;
 import java.util.Scanner;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class ej7 {

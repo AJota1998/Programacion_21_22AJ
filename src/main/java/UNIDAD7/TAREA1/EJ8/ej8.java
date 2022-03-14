@@ -1,4 +1,4 @@
-package UNIDAD7.EJ8;
+package UNIDAD7.TAREA1.EJ8;
 
 import java.util.*;
 
@@ -18,13 +18,5 @@ public class ej8 {
         System.out.println("LISTA NORMAL");
         System.out.println(lista);
         System.out.println("LISTA SIN REPETIDOS");
-        elimina_repetidos(lista);
-
-
-    }
-    public static List elimina_repetidos(List c) {
-        LinkedHashSet lista_sin_rep = new LinkedHashSet(c);
-
-        return (List) lista_sin_rep;
     }
 }
