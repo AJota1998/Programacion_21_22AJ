@@ -1,5 +1,4 @@
 package UNIDAD7.TAREA3B;
-
 /*
 1- Crea un HashMap cuya clave sea un Integer, y cuyos valores sean los nombres de algunos de tus compañeros.
 La clave ha de calcularse mediante un método que reciba un String que represente el dni,
@@ -10,10 +9,15 @@ Una vez guardados los elementos, deben mostrarse todos los elementos (clave-valo
 2- Añada al programa anterior la siguiente funcionalidad.
 El programa pedirá al usuario un dni, calculará la clave que ha de consultar,
 comprobará que dicha clave existe, y, en tal caso, mostrará el valor asociado a esa clave en el HashMap.
+
+3- Recorre el Map anterior, extrayendo cada pareja clave-valor,
+y mostrándolas, de tal forma que se escriban los datos así:
+La clave 37 está asociada al nombre "Pedro Gonzalez Jimenez".
+La clave ... está asociada al nombre ....
 */
 import java.util.*;
 
-public class ej1Yej2 {
+public class ej1_ej2_ej3 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
@@ -31,7 +35,6 @@ public class ej1Yej2 {
 
         //manera de imprimir el valor que tiene la propia clave
         Set<Integer> claves = mapa.keySet();
-
         Iterator<Integer> it = claves.iterator();
         while (it.hasNext()) {
             Integer key = it.next();
@@ -48,6 +51,12 @@ public class ej1Yej2 {
 
         if(tiene_clave) {
             System.out.println(mapa.get(suma_dni(dni_usuario)));
+        }
+
+        //Mostrar todos las clave-valor de un mapa
+        System.out.println("\nrecorrer mediante entry");
+        for (Map.Entry entry : mapa.entrySet()) {
+            System.out.println("Clave: " + entry.getKey() + " valor: " + entry.getValue());
         }
 
     }
