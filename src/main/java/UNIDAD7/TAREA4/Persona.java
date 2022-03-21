@@ -2,33 +2,27 @@ package UNIDAD7.TAREA4;
 
 import java.io.Serializable;
 
-public abstract class Persona implements Serializable {
+public class Persona implements Serializable {
     String nombre;
+    int edad;
+    double estatura;
     String dni;
-    Integer edad;
-    Double estatura;
 
-    public Persona(String nombre, String dni, Integer edad, Double estatura) {
+    public Persona(String nombre, int edad, double estatura, String dni) {
         this.nombre = nombre;
-        this.dni = dni;
         this.edad = edad;
         this.estatura = estatura;
+        this.dni = dni;
     }
 
-    public void mostrarDatos() {
+    void mostrarDatos() {
         System.out.println(nombre);
-        System.out.println(dni);
         System.out.println(edad);
         System.out.println(estatura);
     }
 
     @Override
     public String toString() {
-        return "Persona{" +
-                "nombre='" + nombre + '\'' +
-                ", dni='" + dni + '\'' +
-                ", edad=" + edad +
-                ", estatura=" + estatura +
-                '}';
+        return "Nombre: " + nombre + " edad: " + edad + " estatura: " + estatura + " dni: " + dni;
     }
 }
