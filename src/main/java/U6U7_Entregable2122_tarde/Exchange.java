@@ -17,8 +17,7 @@ public class Exchange implements Serializable {
     }
 
     public void mostrarDivisasOrdenadas() {
-        Set<Divisa> ordenada =
-                new TreeSet<Divisa>(new Comparator<Divisa>() {
+        Set<Divisa> ordenada = new TreeSet<Divisa>(new Comparator<Divisa>() {
                     @Override
                     public int compare(Divisa d1, Divisa d2) {
                         return d1.getSimbolo().compareTo(d2.getSimbolo());
