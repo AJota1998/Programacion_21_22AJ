@@ -54,7 +54,8 @@ public class Filmaffinity implements Serializable {
         while (it.hasNext()) {
             Pelicula p = it.next();
             if (p.getTitulo().equals(titulo)) {
-                return resultado = p;
+                resultado = p;
+                return resultado;
             }
         }
         return resultado;
@@ -84,7 +85,9 @@ public class Filmaffinity implements Serializable {
         while (it.hasNext()) {
             Actor a = it.next();
             if (a.getNombre().equals(nombre) && a.getApellido().equals(apellido)) {
-                return resultado = a;
+                resultado = a;
+                return resultado;
+
             }
         }
         return resultado;
