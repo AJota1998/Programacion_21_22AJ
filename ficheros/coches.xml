@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<coches>
+    <coche>
+        <modelo>Opel Astra</modelo>
+        <kilometros>14569</kilometros>
+    </coche>
+    <coche>
+        <modelo>Kia Ceed</modelo>
+        <kilometros>51987</kilometros>
+    </coche>
+    <coche>
+        <modelo>Toyota Aygo</modelo>
+        <kilometros>25612</kilometros>
+    </coche>
+</coches>
