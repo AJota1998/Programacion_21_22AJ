@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><coches>
+    <!--<!- -COMENTARIO AÑADIDO DESDE DOM- ->--><coche><modelo>Dacia Logan</modelo><kilometros>12908</kilometros></coche>
+    <!--<!- -COMENTARIO AÑADIDO DESDE DOM- ->--><coche>
+        <modelo>Kia Ceed</modelo>
+        <kilometros>51987</kilometros>
+    </coche>
+    <!--<!- -COMENTARIO AÑADIDO DESDE DOM- ->--><coche>
+        <modelo>Toyota Aygo</modelo>
+        <kilometros>25612</kilometros>
+    </coche>
+<coche><modelo>Dacia Logan</modelo><kilometros>89098</kilometros></coche></coches>
