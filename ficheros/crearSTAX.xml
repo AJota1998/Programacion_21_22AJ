@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mariscos>
+	<Marisco numerolote="123AC">
+		<Nombre>Langostino Sanluqueño</Nombre>
+		<Preciokg>A</Preciokg>
+		<CalidadSabor>A</CalidadSabor>
+	</Marisco>
+	<Marisco numerolote="123KC">
+		<Nombre>Langostino tigre</Nombre>
+		<Preciokg>B</Preciokg>
+		<CalidadSabor>B</CalidadSabor>
+	</Marisco>
+	<Marisco numerolote="783AC">
+		<Nombre>Gamba Huelva</Nombre>
+		<Preciokg>A</Preciokg>
+		<CalidadSabor>A</CalidadSabor>
+	</Marisco>
+	<Marisco numerolote="129AC">
+		<Nombre>Navajas</Nombre>
+		<Preciokg>C</Preciokg>
+		<CalidadSabor>C</CalidadSabor>
+	</Marisco>
+	<Marisco numerolote="198AC">
+		<Nombre>Nécoras</Nombre>
+		<Preciokg>B</Preciokg>
+		<CalidadSabor>B</CalidadSabor>
+	</Marisco>
+	<Marisco numerolote="563AC">
+		<Nombre>Patas rusas</Nombre>
+		<Preciokg>A</Preciokg>
+		<CalidadSabor>A</CalidadSabor>
+	</Marisco>
+	<Marisco numerolote="123AL">
+		<Nombre>Coquinas</Nombre>
+		<Preciokg>B</Preciokg>
+		<CalidadSabor>B</CalidadSabor>
+	</Marisco>
+	<Marisco numerolote="143AC">
+		<Nombre>Almeja chirla</Nombre>
+		<Preciokg>D</Preciokg>
+		<CalidadSabor>D</CalidadSabor>
+	</Marisco>
+	<Marisco numerolote="129AC">
+		<Nombre>Cigala</Nombre>
+		<Preciokg>B</Preciokg>
+		<CalidadSabor>B</CalidadSabor>
+	</Marisco>
+	<Marisco numerolote="753NC">
+		<Nombre>Gambón</Nombre>
+		<Preciokg>B</Preciokg>
+		<CalidadSabor>B</CalidadSabor>
+	</Marisco>
+</Mariscos>
