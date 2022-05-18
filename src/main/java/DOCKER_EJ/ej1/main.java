@@ -8,8 +8,16 @@ public class main {
 
         ADclassicModels AD1 = new ADclassicModels();
 
-        System.out.println(AD1.getEmpleados());
-        System.out.println(AD1.getOffices());
+        //System.out.println(AD1.getEmpleados());
+
+        //System.out.println(AD1.getOffices());
+
+        //AD1.insertarCliente();
+
+        //AD1.AsignarEmpleadoCliente();
+
+        AD1.AsignarproductoApedido();
+
 
         ConexionBD.close();
 
