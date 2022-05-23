@@ -19,7 +19,7 @@ public class Consultas {
 
             prepstatement.setInt(1, precio);
 
-            ResultSet rs = prepstatement.executeQuery(sql);
+            ResultSet rs = prepstatement.executeQuery();
             while (rs.next()) {
                 System.out.println(rs.getString("productName"));
             }
@@ -32,6 +32,7 @@ public class Consultas {
     public void infopagos() {
         System.out.println("Introduzca el número de cliente");
         int numerocliente = teclado.nextInt();
+        System.out.println();
 
         try {
             String sql = "SELECT c.customerName, p.checkNumber, p.paymentDate, p.amount FROM customers c JOIN payments p ON c.customerNumber=p.customerNumber WHERE c.customerNumber = ?";
@@ -40,13 +41,12 @@ public class Consultas {
 
             prepstatement.setInt(1, numerocliente);
 
-            ResultSet rs = prepstatement.executeQuery(sql);
+            ResultSet rs = prepstatement.executeQuery();
             while (rs.next()) {
                 System.out.println(rs.getString("customerName"));
                 System.out.println(rs.getString("checkNumber"));
                 System.out.println(rs.getString("paymentDate"));
                 System.out.println(rs.getDouble("amount"));
-                System.out.println();
 
             }
 
@@ -58,7 +58,7 @@ public class Consultas {
 
     public void informecategoria() {
         System.out.println("Introduzca el nombre de la categoria");
-        String nombrecategoria = teclado.nextLine();
+        String nombrecategoria = teclado.next();
 
         try {
             String sql = "SELECT p.productName, o.quantityOrdered, o.priceEach FROM products p JOIN orderdetails o ON p.productCode=o.productCode WHERE p.productLine = ?";
@@ -67,7 +67,7 @@ public class Consultas {
 
             prepstatement.setString(1, nombrecategoria);
 
-            ResultSet rs = prepstatement.executeQuery(sql);
+            ResultSet rs = prepstatement.executeQuery();
             while (rs.next()) {
                 System.out.println(rs.getString("productName"));
                 System.out.println(rs.getInt("quantityOrdered"));

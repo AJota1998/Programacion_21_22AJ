@@ -7,14 +7,14 @@ public class main {
 
         //Hemos estado mirando y no logramos encontrar el porque no funciona
 
-        //consultas.filtroprecio();
+        consultas.filtroprecio();
 
-        //consultas.infopagos();
+        consultas.infopagos();
 
         consultas.informecategoria();
 
         Transacciones t1 = new Transacciones();
 
-        t1.insertarEmpleado();
+        //t1.insertarEmpleado();
     }
 }
